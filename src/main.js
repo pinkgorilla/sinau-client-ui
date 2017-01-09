@@ -13,7 +13,7 @@ export async function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .plugin("aurelia-api", config => {
-      var auth = "http://127.0.0.1:8080/v1";
+      var auth = "https://sinau-authentication-api-dev.herokuapp.com/v1";
       config.registerEndpoint('auth', auth);
     })
     .plugin("aurelia-authentication", baseConfig => {
